@@ -1,6 +1,7 @@
 const form = document.querySelector('#formSection > form');
 const input = document.querySelector('#location') as HTMLInputElement;
 const weatherInfos = document.querySelector('#weatherSection');
+const apiKey = ""; // Add your OpenWeatherMap API key here
 
 form?.addEventListener('submit', async (event) => {
     event.preventDefault();
@@ -17,7 +18,7 @@ form?.addEventListener('submit', async (event) => {
     }
 
     try {
-        const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=a069349138437c6761ca49fb51770a40&lang=pt_br&units=metric`);
+        const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${apiKey}&lang=pt_br&units=metric`);
         const data = await response.json();
     
         const weatherData = {
