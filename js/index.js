@@ -11,7 +11,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 const form = document.querySelector('#formSection > form');
 const input = document.querySelector('#location');
 const weatherInfos = document.querySelector('#weatherSection');
-const apiKey = ""; // Add your OpenWeatherMap API key here
+const apiKey = ''; // Add your OpenWeatherMap API key here
 form === null || form === void 0 ? void 0 : form.addEventListener('submit', (event) => __awaiter(void 0, void 0, void 0, function* () {
     event.preventDefault();
     if (!input || !weatherInfos) {

@@ -1,7 +1,7 @@
 const form = document.querySelector('#formSection > form');
 const input = document.querySelector('#location') as HTMLInputElement;
 const weatherInfos = document.querySelector('#weatherSection');
-const apiKey = ""; // Add your OpenWeatherMap API key here
+const apiKey = '' // Add your OpenWeatherMap API key here
 
 form?.addEventListener('submit', async (event) => {
     event.preventDefault();
